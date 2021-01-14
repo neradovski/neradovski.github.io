@@ -1,0 +1,794 @@
+	<!DOCTYPE html>
+	<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>грузы из Китая с компанией BTG - экспорт и импорт грузов из китая любым видом транспорта</title>
+		<style>
+		.collapsed {
+			background-color: #e7e7e7!important;
+		}
+
+		#toTop {
+			width: 60px;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			background: #f7f7f7;
+			text-align: center;
+			padding: 5px;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			cursor: pointer;
+			display: none;
+			color: #333;
+			font-family: 'roboto_bold', sans-serif;
+			font-size: 14px;
+		}
+
+		button {
+			outline: none;
+		}
+
+		.transition {
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+		}
+
+		h1,h2 {
+			color: #242830!important;
+			font-size: 23px!important;
+			text-transform: uppercase!important;
+			font-family: 'roboto_bold', sans-serif!important;
+		}
+
+		.text-slider {
+			padding: 220px 0 260px;
+			text-align: left;
+		}
+
+		h1,.text-slider h2 {
+			margin-top: 0!important;
+			font-size: 61px!important;
+			color: #ffffff!important;
+			font-family: 'roboto_bold', sans-serif;
+		}
+
+		.text-slider p {
+			color: #ffffff;
+			font-size: 16px;
+			margin-bottom: 38px;
+			font-family: 'roboto_Reg', sans-serif;
+		}
+
+		.wrap_header {
+			position: relative;
+		}
+
+		.header {
+			padding: 45px 0;
+			top: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			position: absolute;
+			white-space: nowrap;
+			z-index: 10;
+		}
+
+		.header p {
+			text-align: left;
+			font-size: 14px;
+			line-height: 74px;
+			font-family: 'roboto_Reg', sans-serif;
+			color: #ffffff;
+		}
+
+		.head_right {
+			margin: 0;
+			height: 74px;
+		}
+
+		.header ul li {
+			display: inline-block;
+			text-align: right;
+			font-family: 'roboto_bold', sans-serif;
+			font-size: 16px;
+			line-height: 74px;
+		}
+
+		.header ul li a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+		.head_right li:first-child {
+			padding-right: 15px;
+		}
+
+		.head_right a.header_btn {
+			width: 184px!important;
+			border: 2px solid #ffffff!important;
+			border-radius: 50px!important;
+			font-size: 15px!important;
+			padding: 17px!important;
+			cursor: pointer!important;
+		}
+
+		.logo {
+			text-align: center;
+		}
+
+		.logo a {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			padding: 0 148px;
+			margin-left: -20px;
+		}
+
+		.logo a:after {
+			right: 0;
+		}
+
+		.logo a:before {
+			left: 0;
+		}
+
+		.nav-plank {
+			margin-top: 32px !important;
+		}
+
+		.nav-plank ul {
+			padding-left: 0;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		.nav-plank ul li {
+			line-height: 28px!important;
+		}
+
+		.nav-plank ul li.button_zoom {
+			position: relative;
+			width: 28px;
+			height: 28px;
+			background-color: #1f6c99;
+			border-radius: 50px;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.nav-plank ul li.button_zoom a img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.navbar-default .navbar-nav > li > a {
+			color: #ffffff!important;
+		}
+
+/*		.navbar-default .navbar-nav > li > a:focus,
+		.navbar-default .navbar-nav > li > a:hover {
+			color: #888888!important;
+		}*/
+
+		.navbar-header {
+			text-align: center!important;
+		}
+
+		.navbar-toggle {
+			float: none;
+			text-align: center;
+			margin: 0 auto!important;
+		}
+
+		.nav-plank ul li.button_zoom a {
+			width: 100%;
+			height: 100%;
+		}
+
+		.link_down li a {
+			position: relative;
+			padding-bottom: 15px;
+		}
+
+		.link_down li a:hover:before {
+			content: "";
+			width: 38px;
+			height: 2px;
+			position: absolute;
+			left: 13%;
+			bottom: 0;
+			background: #0C5E90;
+		}
+
+		.link_down li.button_zoom a:hover:before {
+			display: none;
+		}
+
+		.navbar-default {
+			background-color: transparent!important;
+			border: none!important;
+		}
+
+		.navbar-nav li,
+		.navbar-nav {
+			float: none!important;
+		}
+	</style>
+	</head>
+
+	<body>
+		<div class="nav-plank small">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#outmenu2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				</div>
+				<div class="collapse navbar-collapse" id="outmenu2">
+					<ul class="link_down nav navbar-nav">
+						<li><a class="link" href="#btg">О компании</a></li>
+						<li><a class="link" href="index-in.html">Услуги</a></li>
+						<li><a class="link" href="#news">Новости</a></li>
+						<li><a class="link" href="#">Калькулятор</a></li>
+						<li><a class="link" href="#">Контакты</a></li>
+						<li class="button_zoom">
+							<a href="#"><img src="img/zoom.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<main>
+			<div class="wrap_header">
+				<div class="header">
+					<div class="container">
+						<div class="row">
+							<div class="header_up">
+								<div class="col-lg-3 col-md-4 col-xs-12">
+									<p class="head_left">Импортно-экспортная компания</p>
+								</div>
+								<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-0 col-xs-12">
+									<div class="logo">
+										<a href="#"><img src="img/logo.png" alt=""></a>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-12">
+									<ul class="head_right">
+										<li><a href="tel:8(961)996-25-03">8 (961) 996-25-03</a></li>
+										<li> <a href="#" onclick="yaCounter47121087.reachGoal('click_zvonok_header_st1'); return true;" class="header_btn transition popup-btn2">Заказать звонок</a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="nav-plank big">
+							<nav class="navbar navbar-default">
+								<div class="collapse navbar-collapse" id="outmenu">
+									<ul class="link_down nav navbar-nav">
+										<li><a class="link transitionF" href="#btg">О компании</a></li>
+										<li><a class="link" href="index-in.html">Услуги</a></li>
+										<li><a class="link" href="#news">Новости</a></li>
+										<li><a class="link" href="#">Калькулятор</a></li>
+										<li><a class="link" href="#">Контакты</a></li>
+										<li class="button_zoom">
+											<a href="#"><img src="img/zoom.png" alt=""></a>
+										</li>
+									</ul>
+								</div>
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#outmenu"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="wrap_slider">
+					<div class="header-slider razmer">
+						<div class="slide1">
+							<div class="text-slider">
+								<div class="container">
+									<h1>Грузы из Китая <br> с компанией "BTG"</h1>
+									<p>Экспорт и импорт грузов из Китая любым видом транспорта.
+										<br> Без переплат и точно в срок!</p>
+										<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+									</div>
+								</div>
+							</div>
+							<div class="slide2">
+								<div class="text-slider">
+									<div class="container">
+										<h2>Грузы из Китая <br> с компанией "BTG"</h2>
+										<p>Экспорт и импорт грузов из Китая любым видом транспорта.
+											<br> Без переплат и точно в срок!</p>
+											<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+										</div>
+									</div>
+								</div>
+								<div class="slide3">
+									<div class="text-slider">
+										<div class="container">
+											<h2>Грузы из Китая <br> с компанией "BTG"</h2>
+											<p>Экспорт и импорт грузов из Китая любым видом транспорта.
+												<br> Без переплат и точно в срок!</p>
+												<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+					<section class="services">
+						<div class="container">
+							<div class="service_block">
+								<h2>Наши услуги</h2>
+								<div class="row cellrow">
+									<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+										<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.4s">
+											<div class="cell-img transition"> <img class="second" src="img/service_1w.png" alt=""> <img class="first" src="img/service_1.png" alt=""> </div>
+											<div class="cell-txt">
+												<p>Международные
+													<br> грузоперевозки</p> <a href="index-in.html">Подробней</a> </div>
+												</div>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+												<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.5s">
+													<div class="cell-img transition"> <img class="second" src="img/service_2w.png" alt=""> <img class="first" src="img/service_2.png" alt=""> </div>
+													<div class="cell-txt">
+														<p>Доставка
+															<br>грузов из Китая</p> <a href="index-in.html">Подробней</a> </div>
+														</div>
+													</div>
+													<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+														<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.6s">
+															<div class="cell-img transition"> <img class="second" src="img/service_3w.png" alt=""> <img class="first" src="img/service_3.png" alt=""> </div>
+															<div class="cell-txt">
+																<p>Таможенное
+																	<br>оформление</p> <a href="index-in.html">Подробней</a> </div>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+																<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.7s">
+																	<div class="cell-img transition"> <img class="second" src="img/service_4w.png" alt=""> <img class="first" src="img/service_4.png" alt=""> </div>
+																	<div class="cell-txt">
+																		<p>Контейнерные
+																			<br>перевозки</p> <a href="index-in.html">Подробней</a> </div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+																		<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.8s">
+																			<div class="cell-img transition"> <img class="second" src="img/service_5w.png" alt=""> <img class="first" src="img/service_5.png" alt=""> </div>
+																			<div class="cell-txt">
+																				<p>Доставка
+																					<br>сборных грузов</p> <a href="index-in.html">Подробней</a> </div>
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-sm-6 col-xs-12 specpad">
+																				<div class="wrap-cell transition wow zoomIn" data-wow-delay="0.9s">
+																					<div class="cell-img transition"> <img class="second" src="img/service_6w.png" alt=""> <img class="first" src="img/service_6.png" alt=""> </div>
+																					<div class="cell-txt">
+																						<p>Финансирование
+																							<br>поставок</p> <a href="http://gargonta.ru/btgIn">Подробней</a> </div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</section>
+																	<section class="btg" id="btg">
+																		<div class="container-fluid">
+																			<div class="row">
+																				<div class="col-md-6 error-pad">
+																					<div class="wrap-btg-img"> <img class="btg-logo" src="img/logo.png" alt=""> </div>
+																				</div>
+																				<div class="col-md-6 error-pad">
+																					<div class="wrap-text">
+																						<h4>"BTG" - Buisness Trans Group</h4>
+																						<p class="text1">Международная компания</p>
+																						<p class="text2">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации систем массового участия. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации существенных финансовых и административных условий.</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</section>
+																	<section class="news" id="news">
+																		<h2>Новости</h2>
+																		<div class="wrap-news">
+																			<div class="container">
+																				<div class="row wrap-news-row">
+																					<div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 specpad">
+																						<div class="news-block wow slideInUp" data-wow-delay="0.2s"> <a class=" transitionF" href="#"><img  src="img/news1.jpg" alt=""></a>
+																							<p class="news-text1">Открытие нового
+																								<br>направления поставок</p>
+																								<p class="data">15.09.17</p>
+																							</div>
+																						</div>
+																						<div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 specpad">
+																							<div class="news-block wow slideInUp" data-wow-delay="0.3s"><a class=" transitionF" href="#"><img src="img/news2.jpg" alt=""></a>
+																								<p class="news-text1">Открытие нового
+																									<br>направления поставок</p>
+																									<p class="data">15.09.17</p>
+																								</div>
+																							</div>
+																							<div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 specpad">
+																								<div class="news-block wow slideInUp" data-wow-delay="0.4s"> <a class=" transitionF" href="#"><img src="img/news3.jpg" alt=""></a>
+																									<p class="news-text1">Открытие нового
+																										<br>направления поставок</p>
+																										<p class="data">15.09.17</p>
+																									</div>
+																								</div>
+																								<div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 specpad">
+																									<div class="news-block wow slideInUp" data-wow-delay="0.5s"> <a class=" transitionF" href="#"><img src="img/news4.jpg" alt=""></a>
+																										<p class="news-text1">Открытие нового
+																											<br>направления поставок</p>
+																											<p class="data">15.09.17</p>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</section>
+																					<section class="air-slider">
+																						<div class="air-section-slider">
+																							<div class="air-slide1">
+																								<div class="text-slider">
+																									<div class="container">
+																										<h2>Работаем с экспортом<br> и импортом по всему миру</h2>
+																										<p>Наши специалисты помогут вам доставить
+																											<br>ваши грузы в любую точку мира</p>
+																											<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="air-slide2">
+																									<div class="text-slider">
+																										<div class="container">
+																											<h2>Гоняем контрабанду<br>в любую точку мира</h2>
+																											<p>Наши специалисты помогут вам доставить
+																												<br>ваши грузы в любую точку мира</p>
+																												<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="air-slide3">
+																										<div class="text-slider">
+																											<div class="container">
+																												<h2>Наша списанная техника<br>не покрывает страховку</h2>
+																												<p>Наши специалисты помогут вам доставить
+																													<br>ваши грузы в любую точку мира</p>
+																													<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+																												</div>
+																											</div>
+																										</div>
+																										<div class="air-slide4">
+																											<div class="text-slider">
+																												<div class="container">
+																													<h2>Слепой пилот<br>знает своё дело</h2>
+																													<p>Наши специалисты помогут вам доставить
+																														<br>ваши грузы в любую точку мира</p>
+																														<button class="transitionF transition2 popup-btn">Быстрая заявка</button>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</section>
+																									<section class="partners">
+																										<h2>Наши партнеры</h2>
+																										<div class="wrap-partners">
+																											<div class="container">
+																												<div class="wrap-block-partners">
+																													<div class="partners-cell wow zoomIn" data-wow-delay="0.2s">
+																														<div class="partners-cell-img"> <img class="greyimg" src="img/partner1.png" alt=""> <img class="colorimg" src="img/partner1c.png" alt=""> </div>
+																													</div>
+																													<div class="partners-cell wow zoomIn" data-wow-delay="0.4s">
+																														<div class="partners-cell-img"> <img class="greyimg" src="img/partner2.png" alt=""> <img class="colorimg" src="img/partner2c.png" alt=""> </div>
+																													</div>
+																													<div class="partners-cell wow zoomIn" data-wow-delay="0.6s">
+																														<div class="partners-cell-img"> <img class="greyimg" src="img/partner3.png" alt=""> <img class="colorimg" src="img/partner3c.png" alt=""> </div>
+																													</div>
+																													<div class="partners-cell wow zoomIn" data-wow-delay="0.8s">
+																														<div class="partners-cell-img"> <img class="greyimg" src="img/partner1.png" alt=""> <img class="colorimg" src="img/partner1c.png" alt=""> </div>
+																													</div>
+																													<div class="partners-cell wow zoomIn" data-wow-delay="1s">
+																														<div class="partners-cell-img"> <img class="greyimg" src="img/partner2.png" alt=""> <img class="colorimg" src="img/partner2c.png" alt=""> </div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</section>
+																									<section class="form-services">
+																													<img class="airplane"	src="img/airplane.png" alt="убери стрелочку с самолёта">
+																										<div class="container">
+																											<h2>Запрос на услуги</h2>
+																											<div class="row">
+																												<div class="col-md-8 col-md-offset-2">
+																													<div class="feedback-form">
+																														<form class="form-service" action="mailer/smart.php" method="POST">
+																															<div class="row">
+																																<div class="col-md-6">
+																																	<div class="wrap-input">
+																																		<input class="form-input item" name="user_when" required type="text" placeholder="Откуда"> </div>
+																																	</div>
+																																	<div class="col-md-6">
+																																		<div class="wrap-input">
+																																			<input class="form-input item" name="user_where" required type="text" placeholder="Куда"> </div>
+																																		</div>
+																																		<div class="col-md-6">
+																																			<div class="wrap-input">
+																																				<input class="form-input" name="user_name" required type="text" placeholder="Как вас зовут"> </div>
+																																			</div>
+																																			<div class="col-md-6">
+																																				<div class="wrap-input">
+																																					<input class="form-input" name="user_phone" id="phone" required type="text" placeholder="Телефон"> </div>
+																																				</div>
+																																			</div>
+																																			<button class="form-btn transitionF transition2" type="submit" onclick="yaCounter47121087.reachGoal('zayavka_st1'); return true;">Получить расчёт</button>
+																																			<p class="tac_tel">Нажав кнопку «Получить расчет», я даю согласие на обработку моих персональных данных.</p>
+																																		</form>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</section>
+																													<footer class="footer_down">
+																														<div class="container">
+																															<div class="row">
+																																<div class="col-md-2 col-xs-12">
+																																	<div class="logo-img-down"> <img src="img/logo_color.png" alt="" class="logo"> </div>
+																																</div>
+																																<div class="col-md-7">
+																																	<div class="nav-plank middle">
+																																		<ul class="link_down">
+																																			<li><a class="link" href="#btg">О компании</a></li>
+																																			<li><a class="link" href="index-in.html">Услуги</a></li>
+																																			<li><a class="link" href="#news">Новости</a></li>
+																																			<li><a class="link" href="#">Калькулятор</a></li>
+																																			<li class="none-margin"><a class="link" href="#">Контакты</a></li>
+																																		</ul>
+																																	</div>
+																																</div>
+																																<div class="col-md-3 col-xs-12">
+																																	<div class="nav-plank autor">
+																																		<ul class="link_down">
+																																			<li><a class="link" href="#">Создание сайта:</a></li>
+																																			<li class="none-margin"><img src="img/autor.png" alt=""></li>
+																																		</ul>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</footer>
+																													<div class="popup" id="popup">
+																														<div class="popup-dialog">
+																															<div class="popup-content">
+																																<button class="popup-close">&times;</button>
+																																<h4 class="popup-header">быстрая заявка</h4>
+																																<div class="main-form popup-form">
+																																	<form class="form" action="mailer/smart.php" method="POST">
+																																		<input class="form-marker form-margin" required name="user_when" type="text" placeholder="Откуда">
+																																		<input class="form-marker" required name="user_where" type="text" placeholder="Куда">
+																																		<input class="form-input form-margin" required name="user_name" type="text" placeholder="Как вас зовут">
+																																		<input class="form-input" required id="tphone" name="user_phone" type="text" placeholder="Телефон">
+																																		<button class="form-btn transitionF transition2" type="submit">Заказать звонок</button>
+																																		<p class="yes">Нажав кнопку «Заказать звонок»,
+																																			<br>я даю согласие на обработку моих персональных данных.</p>
+																																		</form>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																														<div class="popup popup_mini">
+																															<div class="popup-dialog">
+																																<div class="popup-content">
+																																	<button class="popup-close popup-close2">&times;</button>
+																																	<h4 class="popup-header">заказать звонок</h4>
+																																	<div class="main-form popup-form">
+																																		<form class="form" action="mailer/smart.php" method="POST">
+																																			<input class="form-input form-margin" required name="user_name" type="text" placeholder="Как вас зовут">
+																																			<input class="form-input" required id="cphone" name="user_phone" type="text" placeholder="Телефон">
+																																			<button class="form-btn transitionF transition2" type="submit">Заказать звонок</button>
+																																			<p class="yes">Нажав кнопку «Заказать звонок»,
+																																				<br>я даю согласие на обработку моих персональных данных.</p>
+																																			</form>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																															<div class="popup popup-last">
+																																<div class="popup-dialog">
+																																	<div class="popup-content">
+																																		<button class="popup-close popup-close3">&times;</button>
+																																		<p>Благодарим за обращение.
+																																			<br>Ваша заявка принята.</p>
+																																		</div>
+																																	</div>
+																																</div>
+																																<div id="toTop">Наверх</div>
+																																<link rel="stylesheet" href="css/style.css">
+																																<link href="css/bootstrap.min.css" rel="stylesheet">
+																																<link rel="stylesheet" href="css/slick.css">
+																																<link rel="stylesheet" href="css/slick-theme.css">
+																																<link rel="stylesheet" href="css/animate.css">
+																																<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+																																<script src="js/slick.min.js"></script>
+																																<script src="js/bootstrap.min.js"></script>
+																																<script src="js/jquery.maskedinput.min.js"></script>
+																																<script src="js/wow.js">
+																																</script>
+																																<script>
+																																	$(document).ready(function() {
+																																		$('.popup-btn').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('#popup').fadeIn();
+																																		});
+																																		$('.popup-close').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('#popup').fadeOut();
+																																		});
+																																		$('.popup-btn2').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('.popup_mini').fadeIn();
+																																		});
+																																		$('.popup-close2').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('.popup_mini').fadeOut();
+																																		});
+																																		$('.popup-btn3').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('.popup-last').fadeIn();
+																																		});
+																																		$('.popup-close3').on('click', function(event) {
+																																			event.preventDefault();
+																																			$('.popup-last').fadeOut();
+																																		});
+																																		$('.air-section-slider').slick({
+																																			swipe: true,
+																																			infinite: true,
+																																			slidesToShow: 1,
+																																			slidesToScroll: 1,
+																																			prevArrow: '<button class="prev arrow"></button>',
+																																			nextArrow: '<button class="next arrow"></button>',
+																																			responsive: [{
+																																				breakpoint: 991,
+																																				settings: {
+																																					dots: true,
+																																					slidesToShow: 1,
+																																					slidesToScroll: 1
+																																				}
+																																			}, {
+																																				breakpoint: 767,
+																																				settings: {
+																																					dots: true,
+																																					slidesToShow: 1,
+																																					slidesToScroll: 1
+																																				}
+																																			}]
+																																		});
+																																		$('.header-slider').slick({
+																																			dots: true,
+																																			swipe: true,
+																																			infinite: true,
+																																			slidesToShow: 1,
+																																			slidesToScroll: 1,
+																																			prevArrow: '<button class="prev arrow"></button>',
+																																			nextArrow: '<button class="next arrow"></button>',
+																																			responsive: [{
+																																				breakpoint: 991,
+																																				settings: {
+																																					slidesToShow: 1,
+																																					slidesToScroll: 1
+																																				}
+																																			}, {
+																																				breakpoint: 767,
+																																				settings: {
+																																					slidesToShow: 1,
+																																					slidesToScroll: 1
+																																				}
+																																			}]
+																																		});
+																																	});
+																																</script>
+																																<script>
+																																	new WOW().init();
+																																</script>
+																																<script>
+																																	jQuery(function($) {
+																																		$("#phone").mask("+7(999) 999-99-99");
+																																	});
+																																</script>
+																																<script>
+																																	jQuery(function($) {
+																																		$("#fphone").mask("+7(999) 999-99-99");
+																																	});
+																																</script>
+																																<script>
+																																	jQuery(function($) {
+																																		$("#pphone").mask("+7(999) 999-99-99");
+																																	});
+																																</script>
+																																<script>
+																																	jQuery(function($) {
+																																		$("#tphone").mask("+7(999) 999-99-99");
+																																	});
+																																</script>
+																																<script>
+																																	jQuery(function($) {
+																																		$("#cphone").mask("+7(999) 999-99-99");
+																																	});
+																																</script>
+																																<script>
+																																	$('form').submit(function(event) {
+																																		event.preventDefault();
+																																		$.ajax({
+																																			type: "POST",
+																																			url: "mailer/smart.php",
+																																			data: $(this).serialize()
+																																		}).done(function() {
+																																			$(this).find("input").val("");
+																																			$('.popup-last').fadeIn();
+																																			$('.popup-close3').on('click', function(event) {
+																																				event.preventDefault();
+																																				$('.popup').fadeOut();
+																																			});
+																																			$("form").trigger("reset");
+																																		});
+																																		return false;
+																																	});
+																																</script>
+																																<script>
+																																	$(function() {
+																																		$(window).scroll(function() {
+																																			if ($(this).scrollTop() != 0) {
+																																				$('#toTop').fadeIn();
+																																			} else {
+																																				$('#toTop').fadeOut();
+																																			}
+																																		});
+																																		$('#toTop').click(function() {
+																																			$('body,html').animate({
+																																				scrollTop: 0
+																																			}, 800);
+																																		});
+																																	});
+																																</script>
+																																<!-- Yandex.Metrika counter -->
+																																<script>
+																																	(function(d, w, c) {
+																																		(w[c] = w[c] || []).push(function() {
+																																			try {
+																																				w.yaCounter47121087 = new Ya.Metrika({
+																																					id: 47121087,
+																																					clickmap: true,
+																																					trackLinks: true,
+																																					accurateTrackBounce: true,
+																																					webvisor: true
+																																				});
+																																			} catch (e) {}
+																																		});
+																																		var n = d.getElementsByTagName("script")[0],
+																																		s = d.createElement("script"),
+																																		f = function() {
+																																			n.parentNode.insertBefore(s, n);
+																																		};
+																																		s.type = "text/javascript";
+																																		s.async = true;
+																																		s.src = "https://mc.yandex.ru/metrika/watch.js";
+																																		if (w.opera == "[object Opera]") {
+																																			d.addEventListener("DOMContentLoaded", f, false);
+																																		} else {
+																																			f();
+																																		}
+																																	})(document, window, "yandex_metrika_callbacks");
+																																</script>
+																																<noscript>
+																																	<div><img src="https://mc.yandex.ru/watch/47121087" style="position:absolute; left:-9999px;" alt="" /></div>
+																																</noscript>
+																																<!-- /Yandex.Metrika counter -->
+																															</body>
+
+																															</html>
